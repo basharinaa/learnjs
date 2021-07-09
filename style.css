@@ -2,8 +2,34 @@ ul {
     list-style: none; /*убираем маркеры списка*/
     margin: 0; /*убираем верхнее и нижнее поле, равное 1em*/
     padding-left: 0; /*убираем левый отступ, равный 40px*/
+    font-family:'Segoe UI', Verdana, sans-serif;
   }
 
 a {text-decoration: none; /*убираем подчеркивание текста ссылок*/}
 
-li {display: inline;}
+.inline{
+  display: inline;
+  background: rgb(255, 255, 255);
+  transition: 2s;
+  margin: 10px;
+}
+
+.inline:hover{
+  /* background: cornflowerblue; */
+  padding: 4px;
+  border: 3px solid rgb(77, 114, 182);
+  border-radius: 8px;
+  transition: 0.5s;
+}
+
+.promotion {
+width: 200px;
+font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+font-size: 50px;
+font-weight: 700;
+margin-top: 10px;
+padding: 10px;
+border: 3px solid rgb(0, 0, 0);
+border-radius: 8px;
+transition: 0.5s;
+}
