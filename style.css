@@ -1,3 +1,6 @@
+body{
+  background-color: floralwhite;
+}
 ul {
     list-style: none; /*убираем маркеры списка*/
     margin: 0; /*убираем верхнее и нижнее поле, равное 1em*/
@@ -5,30 +8,33 @@ ul {
     font-family:'Segoe UI', Verdana, sans-serif;
   }
 
-a {text-decoration: none; /*убираем подчеркивание текста ссылок*/}
+a {
+  text-decoration: none;
+  color: black; /*убираем подчеркивание текста ссылок*/
+}
 
 .inline{
   display: inline;
   background: rgb(255, 255, 255);
   transition: 2s;
   margin: 10px;
-}
+ 
+  }
 
 .inline:hover{
   /* background: cornflowerblue; */
-  padding: 4px;
-  border: 3px solid rgb(77, 114, 182);
+  padding: 4px 4px 4px 4px;
+  border: 3px solid black;
   border-radius: 8px;
   transition: 0.5s;
 }
 
 .promotion {
 width: 200px;
+height: 100px;
 font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-font-size: 50px;
+font-size: 60px;
 font-weight: 700;
-margin-top: 10px;
-padding: 10px;
 border: 3px solid rgb(0, 0, 0);
 border-radius: 8px;
 transition: 0.5s;

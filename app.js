@@ -1,14 +1,15 @@
-var timeNode = document.getElementById('time-node');
-var hours = document.getElementById('hours');
-var minutes = document.getElementById('minutes');
-var seconds = document.getElementById('seconds');
+var element = document.getElementById('hoursId'),
 
 
-function getCurrentTimeString() {
-   return new Date().toTimeString().replace(/ .*/, '');
+function GetDivElement() {
+    hours = 2;
+    element.innerHTML = hours;
 }
 
-setInterval(
-   () => timeNode.innerHTML = getCurrentTimeString(),
-   1000
-);
+document.addEventListener("DOMContentLoaded", function(event) { 
+    setInterval('GetDivElement()',500);
+  });
+
+// var minutes = document.getElementById('minutesId');
+// var seconds = document.getElementById('secondsId');
+// document.getElementById("hoursId").innerHTML = show;
