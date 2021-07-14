@@ -9,27 +9,32 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <title>JS learning only</title>
-
+    
 </head>
 
-<body>
-    <script src="app.js"></script>
+<body onload='startTime()'>
+
     <header>
         <ul>
             <li class="inline"><a href="">Home</a></li>
             <li class="inline"><a href="">Work</a></li>
             <li class="inline"><a href="">About Me</a></li>
-            <li class="inline"><p id="hoursId"></p></li>
         </ul>
     </header>
-    <!-- <div>
+    <div class="divClock">
         <ul>
-            <li class="inline promotion" id="hoursId"> </li>
-            <li class="inline promotion" id="minutesId"> </li>
-            <li class="inline promotion" id="secondsId"> </li>
+            <li class="divClock" id="hoursId"> </li>
+            <li class="divClock" id="minutesId"> </li>
+            <li class="divClock" id="secondsId"> </li>
         </ul>
-    </div> -->
-    <div id="hoursId"></div>
+    </div>
+   
+    <select name="" id="mySelect">
+        <option value="">JavaScript</option>
+        <option value="">React JS</option>
+        <option value="">Vue JS</option>
+    </select>
+    <script src="app.js"></script>
 </body>
 
 </html>

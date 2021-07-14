@@ -1,15 +1,20 @@
-var element = document.getElementById('hoursId'),
 
+function startTime() {
+  var time = new Date();
+  var hours = time.getHours();
+  if (hours < 10) hours = '0' + hours;
+  var minutes = time.getMinutes();
+  if (minutes < 10) minutes = '0' + minutes;
+  var seconds = time.getSeconds();
+  if (seconds < 10) seconds = '0' + seconds;
+  document.getElementById('hoursId').innerHTML=hours;
+  document.getElementById('minutesId').innerHTML=minutes;
+  document.getElementById('secondsId').innerHTML=seconds;
+  // var day = time.getDay();
+  // var month = time.getMonth();
+  // var year = time
 
-function GetDivElement() {
-    hours = 2;
-    element.innerHTML = hours;
+setTimeout("startTime()", 1000);
 }
 
-document.addEventListener("DOMContentLoaded", function(event) { 
-    setInterval('GetDivElement()',500);
-  });
-
-// var minutes = document.getElementById('minutesId');
-// var seconds = document.getElementById('secondsId');
-// document.getElementById("hoursId").innerHTML = show;
+//var sel = document.getElementById('mySelect').selectedIndex;
