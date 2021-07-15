@@ -35,6 +35,14 @@
         <option value="">Vue JS</option>
     </select>
     <p id="notify"></p>
+    <div class="transformClass">
+        <input type="range" min="100" max="300" step="1" oninput="divHeight()" id="divH" name="divHeight">
+        <label for="divHeight"> Height of div</label>
+        <input type="range" min="10" max="60" step="1" oninput="fontSize()" id="fS" name="fontSize">
+        <label for="fontSize"> Font size</label>
+        <p id="divHnum"></p>
+        <p id="fontNum"></p>
+    </div>
     <script src="app.js"></script>
 </body>
 
