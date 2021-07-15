@@ -17,4 +17,8 @@ function startTime() {
 setTimeout("startTime()", 1000);
 }
 
-//var sel = document.getElementById('mySelect').selectedIndex;
+function displayOption() {
+  var sel = document.getElementById('mySelect');
+  var x = sel.selectedIndex;
+    document.getElementById('notify').innerHTML="You chose " + sel.options[x].text + "!";
+}

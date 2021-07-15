@@ -21,7 +21,7 @@
             <li class="inline"><a href="">About Me</a></li>
         </ul>
     </header>
-    <div class="divClock">
+    <div>
         <ul>
             <li class="divClock" id="hoursId"> </li>
             <li class="divClock" id="minutesId"> </li>
@@ -29,11 +29,12 @@
         </ul>
     </div>
    
-    <select name="" id="mySelect">
+    <select id="mySelect" onchange="displayOption()">
         <option value="">JavaScript</option>
         <option value="">React JS</option>
         <option value="">Vue JS</option>
     </select>
+    <p id="notify"></p>
     <script src="app.js"></script>
 </body>
 
